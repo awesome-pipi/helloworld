@@ -1,0 +1,27 @@
+body,
+.navLinks {
+  background-color: #fff;
+}
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+}
+.myHeader {
+  padding: 0;
+  background-color: #006699;
+}
+.myHeader h1 {
+  color: #fff;
+}
+.myHeader .mui-icon-search {
+  color: #fff;
+}
+.myFooter {
+  background-color: #006699;
+}
+.myFooter .mui-tab-item {
+  color: #fff;
+}
+.myFooter .mui-tab-item.mui-active {
+  color: darkorange;
+}
