@@ -1,0 +1,82 @@
+body,
+.navLinks {
+  background-color: #fff;
+}
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+}
+.myHeader {
+  padding: 0;
+  background-color: #006699;
+}
+.myHeader h1 {
+  color: #fff;
+}
+.myHeader .mui-icon-search {
+  color: #fff;
+}
+.myFooter {
+  background-color: #006699;
+}
+.myFooter .mui-tab-item {
+  color: #fff;
+}
+.myFooter .mui-tab-item.mui-active {
+  color: darkorange;
+}
+.mui-bar-nav ~ .mui-content {
+  width: 94%;
+  margin: 55px auto 0 auto;
+  padding-top: 0;
+}
+.mui-bar-nav ~ .mui-content li {
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+}
+.mui-bar-nav ~ .mui-content li span {
+  font-size: 12px;
+}
+ul {
+  overflow: hidden;
+  padding: 0 10px;
+}
+ul li {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  text-align: center;
+}
+ul li .shoes {
+  display: block;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+ul li .shoes img {
+  width: 100%;
+}
+ul li .shoes .adidas {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  padding: 0 5px;
+}
+ul li .shoes p span:first-child {
+  color: red;
+  margin-right: 6px;
+}
+ul li .shoes p span:last-child {
+  color: #c8d2e1;
+  margin-left: 6px;
+  text-decoration: line-through;
+}
+ul li .shoes button {
+  width: 90px;
+  height: 30px;
+  background-color: #006699;
+  line-height: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}

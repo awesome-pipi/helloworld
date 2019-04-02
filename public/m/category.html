@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/mui-master/dist/css/mui.min.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header id="header" class="mui-bar mui-bar-nav myHeader">
+        <h1 class="mui-title">导航栏</h1>
+        <a href="javascript:;" class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <div class="category_content">
+        <div class="left_content">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll leftRoll" id="leftRoll">
+                </div>
+            </div>
+        </div>
+        <div class="right_content">
+            <div class="mui-scroll-wrapper right_scroll">
+                <div class="mui-scroll" id="right_content">
+                </div>
+            </div>
+        </div>
+        <nav class="mui-bar mui-bar-tab myFooter">
+            <a class="mui-tab-item mui-active" href="#tabbar">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-chat">
+                <span class="mui-icon mui-icon-bars"><span class="mui-badge">9</span></span>
+                <span class="mui-tab-label">分类</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-contact">
+                <span class="mui-icon fa fa-shopping-cart"></span>
+                <span class="mui-tab-label">购物车</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-map">
+                <span class="mui-icon mui-icon-person"></span>
+                <span class="mui-tab-label">会员中心</span>
+            </a>
+        </nav>
+</body>
+
+<script type="text/template" id="topCatList">
+    {{each rows}}
+        <li class="mui-control-item mui-active" data-index="0" 
+        href="#content1" data-id="{{$value.id}}">{{$value.categoryName}}</li>
+    {{/each}}
+</script>
+
+<script type="text/template" id="secondCate">
+    {{each rows}}
+        <li>
+            <a href="javascript:;">
+                <img src="{{$value.brandLogo}}" alt="">
+                <span>{{$value.brandName}}</span>
+            </a>
+        </li>
+    {{/each}}
+</script>
+<script src="./assets/zepto/zepto.min.js"></script>
+<script src="./assets/mui-master/dist/js/mui.min.js"></script>
+<script src="./assets/tamplate/template-web.js"></script>
+<script src="./js/category.js"></script>
+
+</html>

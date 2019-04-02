@@ -1,0 +1,58 @@
+@import "base.less";
+.mui-bar-nav~.mui-content{
+    width: 94%;
+    margin: 55px auto 0 auto;
+    padding-top: 0;
+    li{
+        list-style: none;
+        text-align: center;
+        font-size: 14px;
+        span{
+            font-size: 12px;
+        }
+    }
+}
+ul{
+    overflow: hidden;
+    padding: 0 10px;
+    li{
+        width: 50%;
+        float: left;
+        padding: 5px;
+        text-align: center;
+        .shoes{
+            display: block;
+            padding: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,.2);
+            img{
+                width: 100%;
+            }
+            .adidas{
+                display: block;
+                font-size: 14px;
+                color: #666;
+                padding: 0 5px;
+            }
+            p{
+                span:first-child{
+                    color: red;
+                    margin-right: 6px;
+                }
+                span:last-child{
+                    color: #c8d2e1; 
+                    margin-left: 6px;
+                    text-decoration: line-through;
+                }
+            }
+            button{
+                width: 90px;
+                height: 30px;
+                background-color: @baseColor;
+                line-height: 18px;
+                color: #fff;
+                margin-bottom: 10px;
+                border-radius: 15px;
+            }
+        }
+    }
+}
