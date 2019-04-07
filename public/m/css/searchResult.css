@@ -25,53 +25,69 @@ ul {
 .myFooter .mui-tab-item.mui-active {
   color: darkorange;
 }
-.mui-bar-nav ~ .mui-content {
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 45px;
+  bottom: 50px;
+  left: 0;
+  padding: 10px;
+}
+.container .container_box {
+  height: 100%;
+}
+.container .container_box .mui-content {
   width: 94%;
-  margin: 55px auto 0 auto;
+  margin: 0 auto;
   padding-top: 0;
 }
-.mui-bar-nav ~ .mui-content li {
+.container .container_box .mui-content li {
   list-style: none;
   text-align: center;
   font-size: 14px;
 }
-.mui-bar-nav ~ .mui-content li span {
+.container .container_box .mui-content li span {
   font-size: 12px;
 }
-ul {
+.container .container_box .mui-scroll-wrapper {
+  overflow: visible;
+}
+.container .container_box .mui-scroll-wrapper ul {
+  top: 45px;
   overflow: hidden;
   padding: 0 10px;
 }
-ul li {
+.container .container_box .mui-scroll-wrapper ul li {
   width: 50%;
   float: left;
   padding: 5px;
   text-align: center;
 }
-ul li .shoes {
+.container .container_box .mui-scroll-wrapper ul li .shoes {
   display: block;
   padding: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-ul li .shoes img {
+.container .container_box .mui-scroll-wrapper ul li .shoes img {
   width: 100%;
 }
-ul li .shoes .adidas {
+.container .container_box .mui-scroll-wrapper ul li .shoes .adidas {
   display: block;
   font-size: 14px;
   color: #666;
   padding: 0 5px;
 }
-ul li .shoes p span:first-child {
+.container .container_box .mui-scroll-wrapper ul li .shoes p span:first-child {
   color: red;
   margin-right: 6px;
 }
-ul li .shoes p span:last-child {
+.container .container_box .mui-scroll-wrapper ul li .shoes p span:last-child {
   color: #c8d2e1;
   margin-left: 6px;
   text-decoration: line-through;
 }
-ul li .shoes button {
+.container .container_box .mui-scroll-wrapper ul li .shoes button {
   width: 90px;
   height: 30px;
   background-color: #006699;
